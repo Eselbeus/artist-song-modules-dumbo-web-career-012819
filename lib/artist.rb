@@ -8,7 +8,6 @@ class Artist
 
   @@artists = []
 
-  binding.pry
   def initialize
     @@artists << self
     @songs = []
@@ -20,6 +19,7 @@ class Artist
 
   def self.all
     @@artists
+    binding.pry
   end
 
   def add_song(song)
